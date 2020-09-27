@@ -14,191 +14,157 @@
 
 html{
   scroll-behavior: smooth;
+  font-size: 0.8em;
+  
 }
 
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Segoe UI';
   margin: 0;
+  height: 100%; 
+  overflow: hidden;
+  background:
+		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
+		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
+		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
+	background-color: rgba(34, 76, 152, 0.25);
 }
 
-#welcome{
-  background-color: #F7F7F7;
-  color: #006838;
-}
-#welcome h2{
-  color: #96CF24;
+/* #welcome{
+  
 }
 
-#work{
-  background-color: #fbeaeb;
-  color: #2f3c7e;
-}
-#work h2{
-  color: #000000;
-}
-#work h3{
-  color: #ce4a16;
+#mns{
+  background-color: DarkRed;
+	background-image: 
+    radial-gradient(circle at center center, black, #ccc), 
+	  repeating-radial-gradient(circle at center center, black, black, 1rem, transparent 2rem, transparent 1rem);  
+  background-blend-mode: multiply; 
 }
 
-#education{
-  background-color: #ffe67c;
-  color: #295f2d;
+#ceb{
+  background:
+		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
+		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
+		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
+	background-color: rgba(34, 76, 152, 0.25);
 }
-#education h2{
-  color: #000000;
+
+#masters{
+  background:
+		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
+		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
+		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
+	background-color: rgba(34, 76, 152, 0.25);
 }
-#education h3{
-  color: #ce4a16;
-}
+
+#bachelors{
+  background:
+		linear-gradient(-135deg, rgb(34, 76, 152) 10%, transparent),
+		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
+		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
+	background-color: rgba(34, 76, 152, 0.25);
+} */
+
+
+
 
 h2{
   text-transform: uppercase;
 }
 
-
-
 section {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: [header-start] 20vh [content-start] auto;
-  align-items: end;
-  justify-items: center;
-}
-
-section h2{
-  grid-area: header-start;
-  
-}
-
-section p{
-  grid-area: content-start;
-  align-self: start;
-  width: 60%;
+  width: 100%;
+  height: 100%;
 }
 
 section .content{
-  grid-area: body-start;
-  
-}
-
-section .content .point{
-  width: 100%;
-  display: grid;
-  grid-template-columns: [img-start] 20% [ul-start] auto; 
-  align-items: center;
-  justify-items: center;
-}
-
-section .content .point img{
-  grid-area: img-start;
-  padding: 2% 10%;
-  width: 80%;
-}
-
-section .content .point ul{
-  grid-area: uk-start;
-  padding: 1% 5%;
-}
-
-
-
-/* section .point{
-  position: relative;
-  display: flex;
-  padding: 0;
-  margin-top: 1vh;
-  margin-bottom: 1vh;
-  height: max-content;
-}
-
-
-
-section#welcome img{
-  float: left;
-  width: 30vw;
-}
-section#welcome p{
-  float: right;
-  width: 30vw;
-}
-
-
- */
-
-
-
-
-/* section .point p {
-  font-size: 0.9rem;
-  float: left;
-  width: 70%;
-  padding: 0.5em 1em;
-  color: #1d1e22;
-  background-color: #f4f4f4;
-  mix-blend-mode: screen;
-  border-radius: 0.25em;
-  pointer-events: none;
-  user-select: none;
- 
-}
-
-section .point ul{
-  font-size: 1rem;
-  word-wrap: none;
-  float: left;
-  overflow: auto;
-  margin: auto;
-  width: 80%;
-  height: max-content;
-}
-section .point ul li{
-  position: relative;
-  float: left;
-  float: inline-start;
-  
-}
-section .point  ul h3{
-  position: relative;
-  color: var(--h3-text-color);
-  font-size: 1.2rem;
-}
-section .point  ul P{
-  position: relative;
-  float: inline-start;
-  font-size: 1rem;
-}
-
-
-section .point img{
-  float: left;
-  margin: auto;
-  width: 10%;
-  margin-left: 3%;
-  
-}
-@keyframes myexpand{
-  from{
-   height: initial;
-  }
-  to{
-    height: fit-content;
-  }
-}
- */
-
-
-.header {
+  top: 10vh;
+  margin-left: 30vw;
+  margin-right: 10vw;
   position: fixed;
-  top: 0;
+  height: 100%;
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-template-rows: 14% auto;
+  grid-template-areas: 
+    "_title ."
+    "main main";
+  justify-items: start;
+  align-items: start;
+}
+
+.content h2{
+  grid-area: _title;
+  margin-left: 6vw;
+}
+.content img{
+  margin-top: 3vh;
+  margin-left: 2vw;
+  grid-area: _title;
+  width: 40%;
+  
+}
+.headshot{
+  border-radius: 50px;
+}
+
+.main p{
+  width: 60%;
+  margin-top: 10vh;
+  margin-left: 6vw;
+}
+
+.main h3{
+  margin-top: 1vh;
+  color: #295f2d;
+}
+.main h2{
+  margin-top: 10vh;
+  margin-left: 6vw;
+  color: #2f3c7e;
+}
+.main ul li, .main ul p{
+  margin-top: 5px;
+  margin-left: 20px
+}
+
+
+
+.content .main{
+  grid-area: main;
+}
+
+section .inactive-sect{
+  z-index: 0;
+}
+
+section .active-sect{
+  animation: outView 0.5;
   z-index: 1;
+}
+
+
+
+
+#header {
+  position: fixed;
+  z-index: 2;
+  top: 12vh;
+  left: 10vw;
+  
   display: flex;
   width: 100%;
   min-height: 60px;
   font-size: 1rem;
-  background-image: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0), transparent);
-  mix-blend-mode: luminosity;
+  /* background-image: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0), transparent);
+  mix-blend-mode: luminosity; */
 }
-.header ul {
+#header ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -206,27 +172,33 @@ section .point img{
   width: 100%;
   justify-content: center;
 }
-.header ul li {
+#header ul li {
   margin: 0 1em;
   padding: 1em;
 }
-.header ul li a {
+#header ul li a {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   color: #000000;
+  margin-left:60px;
 }
-.header ul li a::after {
+#header ul li a::after {
   position: absolute;
   bottom: -3px;
   left: 0;
   content: '';
-  width: 0;
+  width: 100%;
   height: 3px;
   transition: all 0.2s linear;
 }
-.header ul li a:hover::after {
+#header ul li a:hover::after {
+  width: 100%;
+  background-color: #000000;
+}
+
+.active::after{
   width: 100%;
   background-color: #000000;
 }
