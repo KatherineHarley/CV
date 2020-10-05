@@ -19,8 +19,8 @@ html{
 
 body {
   font-family: 'Segoe UI';
-  font-weight: 500;
-  font-size: 0.85em;
+  font-weight: 550;
+  font-size: 0.9em;
   margin: auto;
   
 }
@@ -39,7 +39,7 @@ h2{
   border-radius: 10px;
   color: white;
   mix-blend-mode: difference;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .main{
@@ -58,6 +58,11 @@ h2{
   align-items: center;
 }
 
+#about h3{
+  font-size: 2em;
+  color:  rgb(48, 46, 46);
+}
+
 #about::after {
   content: "";
   background: url('bg/bg2.jpg') no-repeat fixed;
@@ -72,12 +77,12 @@ h2{
 }
 
 #about .main{
-  padding: 0 10vw;
+  padding: 5vh 10vw 15vh 10vw;
   background-color: rgba(255, 255, 255, 0.616);
   color: rgb(71, 71, 71);
   
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 
@@ -155,9 +160,10 @@ h2{
 #what_i_do{
   background-color: rgba(255, 255, 255, 0.699);
   overflow: auto;
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 0;
+  
 }
 #what_i_do h2{
   align-self: center;
@@ -192,8 +198,11 @@ h2{
 }
 
 .main .side_by_side_lists{
+  font-size: 0.8em;
+  width: 90%;
+  margin: auto;
   display: flex;
-  margin-top: 5vh;
+  margin-top: 0;
   background-color: rgba(255, 255, 255, 0.699);
   
 }
@@ -319,7 +328,7 @@ h2{
 }
 
 #header {
-  background-color: rgba(173, 216, 230, 0.705);
+  background-color: rgb(173, 216, 230);
   color: navy;
   position: fixed;
   z-index: 2;
