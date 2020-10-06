@@ -53,7 +53,7 @@ ul{
   width: 70%;
   height: 100%;
   margin: auto;
-  background-color: rgba(131, 126, 120, 0.349);
+  background-color: rgba(197, 197, 218, 0.767);
   padding: 0 5vw;
 }
 /* about */
@@ -93,6 +93,10 @@ ul{
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
+#about h4{
+  margin: 0;
+  padding: 0;
+}
 
 .side_by_side{
   overflow: auto;
@@ -104,11 +108,11 @@ ul{
 }
 
 #about .side_by_side img{
-  width: 15%;
-  min-width: 200px;
+  width: 30%;
+  min-width: 250px;
   border-radius: 15vw;
   padding: 1vh;
-  background-color: rgba(211, 211, 211, 0.397);
+  background-color: rgba(129, 99, 99, 0.397);
 }
 
 #about .side_by_side .title_and_content{
@@ -136,9 +140,10 @@ ul{
   top: 80vh;
   display: flex;
   width: max-content;
-  padding: 20px 0;
+  padding: 15px 10px;
   border-radius: 25px;
   background-color: rgba(145, 142, 138, 0.534);
+  font-size: 1.3em;
 }
 #contact div{
   margin: 0 20px;
@@ -163,14 +168,16 @@ ul{
 #competencies{
   /* background: url('bg/bg2.jpg') no-repeat fixed;
   background-size: cover; */
-  overflow: auto;
+  overflow: hidden;
   
   align-items: center;
   margin: 0;
   padding: 0;
   width: 100%;
+  
   min-height: 100%;
-  color: #303535;
+  
+  color: #636666;
 }
 
 #competencies::after {
@@ -188,13 +195,15 @@ ul{
 
 #competencies h3{
   color: #185c5a;
+  text-align: center;
 }
 
 #what_i_do{
-  overflow: auto;
-  width: 90%;
+  overflow: hidden;
+  width: 100%;
   margin: auto;
   padding: 0;
+  
   
 }
 #what_i_do h2{
@@ -205,15 +214,15 @@ ul{
 #what_i_do ul{
   display: flex;
   flex-wrap: wrap;
-  
   justify-content: space-evenly;
+  
 }
 
 #what_i_do li{
   margin: 10px 30px;
-  width: 25%;
+  width: 35%;
   display: grid;
-  grid-template-columns: [i] 20% [a] 5% [t] auto;
+  grid-template-columns: [i] 10% [a] 5% [t] auto;
   column-gap: 5px;
 }
 
@@ -244,33 +253,37 @@ ul{
   font-size: 0.8em;
   width: 90%;
   margin: auto;
-  display: flex;
+  
   margin-top: 0;
   
   
 }
 
 .main .side_by_side_lists div{
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .main ul.short {
-  
-  column-count: 2;
-  column-gap: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: start;
   
 }
 
 .main ul.short li{
   
-  
+  margin: auto;
+  padding: 5px 5px;
   display: inline-block;
-  padding: 3px 10px;
-  align-self: start;
+  
+  
+  
  
   
 }
+
 
 /* work */
 
@@ -304,19 +317,46 @@ h2{
   margin: 0;
 }
 
-#work h3{
-  color: #5cbdb9;
+.point h3{
+  color: #000000;
 }
 
-#work h4{
-  color: #96bebb;
+.point h4{
+  color: #000000;
+}
+.point h5 {
+  color: #000000;
 }
 
-#work .point{
-  width: 100%;
+.point{
+  
+  display: flex;
+  column-count: 2;
+  column-gap: 100px;
   margin: auto;
   
 }
+.point h4{
+  padding: 0;
+  margin: 0;
+}
+.point h5{
+  padding: 0;
+  margin: 0;
+}
+
+.point div:nth-child(1){
+  width: 40%;
+  
+  border-right: #000000;
+  border-right-style: groove;
+  border-width: 2px;
+  
+}
+.point div:nth-child(2){
+  width: 70%;
+}
+
 
 
 
@@ -352,20 +392,28 @@ h2{
 
 
 #header {
-  background-color: rgb(173, 216, 230);
+  background-color: rgba(173, 216, 230, 0.575);
   color: navy;
   position: fixed;
   z-index: 2;
-  margin: 10vh 0;
+  margin: 0;
   padding: 3vh 1vw;
   width: min-content;
   height: min-content;
-  
-
-  
-  /* background-image: linear-gradient(180deg, #ffffff, rgba(255, 255, 255, 0), transparent);
-  mix-blend-mode: luminosity; */
 }
+
+#header p {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+#header p span{
+  padding: 12px 15px;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+}
+
 #header ul {
   list-style-type: none;
   margin: auto;
@@ -399,5 +447,35 @@ h2{
   color: white;
   overflow: auto;
   text-emphasis: underline;
+}
+
+#competencies .side_by_side_lists .come-in >*{
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+#competencies .side_by_side_lists .come-in >*:nth-child(odd) {
+  transform: translateY(-150px);
+}
+#competencies .side_by_side_lists .come-in >*:nth-child(n) {
+  transform: translateY(-150px);
+  animation-delay: 0.1*n;
+}
+
+
+.come-in >*{
+  transform: translateX(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in >*:nth-child(odd) {
+  transform: translateX(-150px);
+}
+
+/* .already-visible {
+  transform: translateX(0);
+  animation: none;
+} */
+
+@keyframes come-in {
+  to { transform: translateX(0); }
 }
 
