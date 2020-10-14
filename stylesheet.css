@@ -236,8 +236,7 @@ div class="point"
 
 .pattern{
   position: absolute;
-  width: 50px;
-  
+  width: 10px;
 }
 
 /* about */
@@ -361,12 +360,12 @@ section#last{
   display: flex;
   justify-content: center;
 }
+
 #last .main p, #last .main .contactF div{
   margin: 10px;
 }
 
-
-.border{
+#last .main .border{
   border-top: solid black 1px;
   width: 60%;
   
