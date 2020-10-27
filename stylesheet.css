@@ -280,6 +280,7 @@ div class="point"
   }
   .main{
     min-height: fit-content;
+    padding: 4vh 0;
   }
   #contact{
     visibility: hidden;
