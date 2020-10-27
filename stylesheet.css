@@ -271,8 +271,8 @@ div class="point"
     visibility: hidden;
   }
 
-  #about .main{
-
+  section{
+    min-height: fit-content;
   }
 
 
