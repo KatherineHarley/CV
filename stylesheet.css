@@ -278,10 +278,11 @@ div class="point"
 
   .point{
     margin: 3vh 0;
+    padding: 2vh 3vw;
   }
 
   .basic-lists div ul li{
-    font-size: 0.5em;
+    font-size: 0.6em;
   }
   .main{
     min-height: fit-content;
@@ -452,6 +453,7 @@ section#last{
   border-style: solid;
   border-width: 1px;
   border-color: var(--border-nav);
+  height: fit-content;
   
 }
 
@@ -469,7 +471,7 @@ section#last{
   list-style-type: none;
   margin: auto;
   padding: 0;
-  
+  height: fit-content;
 }
 #header ul li {
   /* width: 100%; */
@@ -482,13 +484,14 @@ section#last{
 #header ul li a{
   text-decoration: none;
   text-transform: uppercase;
-  
+  height: fit-content;
   font-size: 1.2em;
 }
 #header li i{
   margin: 10px auto;
   font-size: 2em;
   width: 100%;
+  height: fit-content;
 }
 #header ul li a.nonactive {
   color:  var(--color-nav1);
