@@ -173,6 +173,7 @@ div class="basic-lists"
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 0;
   
 }
 .basic-lists div ul li{
@@ -276,7 +277,7 @@ div class="point"
   }
 
   .basic-lists div ul li{
-    font-size: 0.6em;
+    font-size: 1em;
   }
   .main{
     min-height: fit-content;
@@ -336,6 +337,7 @@ a{
   padding: 0.5%;
   margin-top: 2%;
   margin-right: 8%;
+  margin-bottom: 8vh;
   background-color: var(--bg-circle);
 }
 #contact{
