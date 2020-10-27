@@ -275,6 +275,9 @@ div class="point"
     min-height: fit-content;
   }
 
+  .basic-lists div ul li{
+    font-size: 1em;
+  }
   .main{
     min-height: fit-content;
   }
