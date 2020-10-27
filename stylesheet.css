@@ -275,7 +275,9 @@ div class="point"
     min-height: fit-content;
   }
 
-
+  .main{
+    min-height: fit-content;
+  }
   #contact{
     visibility: hidden;
   }
